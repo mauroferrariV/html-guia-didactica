@@ -1,6 +1,6 @@
 # Guía Didáctica de HTML
 
-Este proyecto es una **guía de estudio en formato HTML** con ejemplos prácticos y comentarios didácticos.  
+Este proyecto es una **guía de estudio en formato HTML** con ejemplos prácticos y comentarios didácticos sobre el mismo código del documento HTML.  
 El objetivo es brindar un recurso claro y accesible para aprender los conceptos fundamentales de **HTML**, desde lo más básico hasta semántica de las etiquetas, formularios y multimedia.
 
 ---
