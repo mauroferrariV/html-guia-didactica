@@ -43,7 +43,7 @@ Cada sección incluye:
 
 ## Demo en GitHub Pages
 
-Si activas **GitHub Pages** en este repositorio, podrás acceder a la guía como un sitio web estático en una URL del estilo:
+https://mauroferrariv.github.io/html-guia-didactica/#inicio
 
 ## Autor
 
