@@ -31,14 +31,11 @@
     <link rel="canonical" href="http://tudominio.com/la-url-canonica" />
     <!--rel="canonical" es un link para la URL original del contenido, es útil para los motores de búsqueda para que el link apunte a la versión más reciente y canónica del contenido-->
 
+    <!---->
     <link rel="stylesheet" href="styles.css" />
     <!--Enlazamos un archivo CSS para personalizar la estructura y diseño de la página-->
     <!-- Estilos en línea (inline styles) pueden ser útiles para pequeñas páginas o cuando no queremos usar un archivo externo-->
-    <style>
-      body {
-        background-color: #f1f1f1;
-      }
-    </style>
+
     <!-- Los enlaces a los iconos y otros recursos en la página-->
     <link rel="icon" type="image/png" href="favicon.png" />
     <!--Los enlaces a los iconos y otros recursos en la página-->
@@ -46,187 +43,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
-    <!--
-       Estilos CSS añadidos para convertir el documento en “cuaderno de estudio”
-    -->
-    <style>
-      :root {
-        --bg: #f9fafb;
-        --panel: #ffffff;
-        --text: #222;
-        --muted: #666;
-        --brand: #2563eb;
-        --border: #e5e7eb;
-        --note: #fffbe6;
-        --note-border: #f7d308;
-      }
-
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        color: var(--text);
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-          Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
-          "Segoe UI Emoji";
-        line-height: 1.6;
-        background: var(--bg);
-      }
-
-      header.site {
-        position: sticky;
-        top: 0;
-        z-index: 50;
-        background: var(--brand);
-        color: #fff;
-        padding: 1rem 1.25rem;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      header.site h1 {
-        margin: 0 0 0.25rem 0;
-        font-size: 1.5rem;
-      }
-      header.site p {
-        margin: 0;
-        font-size: 0.95rem;
-        color: #f0f4ff;
-      }
-
-      .layout {
-        display: grid;
-        grid-template-columns: 280px 1fr;
-        gap: 0;
-        min-height: calc(100vh - 72px);
-      }
-
-      nav.toc {
-        background: var(--panel);
-        border-right: 1px solid var(--border);
-        position: sticky;
-        top: 72px; /* Altura aproximada del header */
-        height: calc(100vh - 72px);
-        overflow-y: auto;
-        padding: 1rem;
-      }
-      nav.toc h2 {
-        font-size: 1.05rem;
-        margin: 0.25rem 0 0.75rem 0;
-      }
-      nav.toc ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      nav.toc li {
-        margin: 0.35rem 0;
-      }
-      nav.toc a {
-        color: var(--text);
-        text-decoration: none;
-        font-size: 0.95rem;
-      }
-      nav.toc a:hover {
-        color: var(--brand);
-        text-decoration: underline;
-      }
-
-      main.content {
-        padding: 1.5rem;
-      }
-
-      section.block {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 1.25rem 1.25rem 1rem;
-        margin: 0 0 1rem 0;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-      }
-      section.block h2 {
-        border-bottom: 2px solid var(--border);
-        padding-bottom: 0.4rem;
-        margin-top: 0;
-      }
-
-      pre,
-      code,
-      kbd,
-      samp,
-      var {
-        background: #f4f6f8;
-        border-radius: 6px;
-      }
-      pre,
-      code {
-        font-family: ui-monospace, "Cascadia Code", "Fira Code", Menlo, Consolas,
-          Monaco, "Liberation Mono", monospace;
-      }
-      pre {
-        padding: 0.8rem;
-        overflow-x: auto;
-        border: 1px solid var(--border);
-      }
-      code {
-        padding: 0.12rem 0.35rem;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 0.75rem 0 1rem;
-        font-size: 0.95rem;
-      }
-      table th,
-      table td {
-        border: 1px solid var(--border);
-        padding: 0.5rem 0.6rem;
-        text-align: left;
-      }
-      table th {
-        background: #f7f7fb;
-      }
-
-      figure {
-        margin: 1rem 0;
-        text-align: center;
-      }
-      figcaption {
-        font-size: 0.9rem;
-        color: var(--muted);
-      }
-
-      .note {
-        background: var(--note);
-        border-left: 6px solid var(--note-border);
-        padding: 0.75rem 1rem;
-        margin: 1rem 0;
-      }
-
-      .back-top {
-        display: inline-block;
-        margin-top: 0.5rem;
-        font-size: 0.9rem;
-      }
-
-      /* Mejoras de accesibilidad visual */
-      a:focus,
-      button:focus,
-      input:focus,
-      select:focus,
-      textarea:focus,
-      summary:focus {
-        outline: 3px solid rgba(37, 99, 235, 0.45);
-        outline-offset: 2px;
-      }
-    </style>
   </head>
 
   <!--el body o el cuerpo de la página, es una etiqueta de bloque con significado semántico, donde se encuentran los elementos de la misma, que queremos mostrar-->
   <body>
     <!-- Cabecera del cuaderno de estudio -->
-    <header class="site">
-      <h1 id="inicio">📘 Guía de Estudio: HTML</h1>
+    <header id="inicio" class="site">
+      <h1>📘 Guía de Estudio: HTML</h1>
       <p>Documentación de estudio con ejemplos y notas en comentarios</p>
     </header>
 
@@ -338,7 +161,7 @@
 
         <!-- Texto básico -->
         <section class="block" id="texto-basico">
-          <!-- 💡 Guía:
+          <!-- Guía:
             - <b>, <i>, <u>, <small>, <sub>, <sup>, <mark> afectan estilo.
             - Para significado/semántica prefiere <strong> y <em>.
           -->
@@ -354,7 +177,7 @@
 
         <!-- Texto semántico -->
         <section class="block" id="texto-semantico">
-          <!-- 💡 Guía:
+          <!-- Guía:
             - <strong> importancia, <em> énfasis.
             - <dfn> definición de término; <blockquote> cita larga; <q> cita corta.
             - <time datetime> añade información máquina-legible (SEO/Accesibilidad).
@@ -373,7 +196,7 @@
 
         <!-- Saltos de línea -->
         <section class="block" id="salto-linea">
-          <!-- 💡 Guía:
+          <!-- Guía:
             - <br> para saltos de línea dentro de un mismo párrafo (úsalo con moderación).
             - Para separar secciones, mejor CSS o nuevos párrafos/encabezados.
           -->
@@ -394,7 +217,7 @@
 
         <!-- Formateo -->
         <section class="block" id="formateo">
-          <!-- 💡 Guía:
+          <!-- Guía:
             - <pre> conserva espacios y saltos (ideal para listas/cuadros de texto).
             - <code> para fragmentos; <samp> salida de programa; <var> variables.
             - <abbr title=""> abreviaturas con expansión accesible.
@@ -455,10 +278,10 @@
 
         <!-- Semántica estructural -->
         <section class="block" id="semanticas-estructurales">
-          <!-- 💡 Guía:
+          <!-- Guía:
             - Usa etiquetas semánticas para dividir zonas: <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>.
             - <main> debe existir solo una vez y contener lo más importante.
-            - <address> (ojo: en el original aparece como <adress>) es para datos de contacto.
+            - <address>  es para datos de contacto.
           -->
           <h2>Etiquetas Semánticas Estructurales</h2>
           <p>
@@ -501,16 +324,18 @@
             section - Etiqueta que define una sección (genérica) en un documento
             o página
           </section>
-          <adress
-            >adress - representa una dirección física o de contacto</adress
-          >
-          <!-- 📝 Sugerencia: la etiqueta correcta es <address> (con 2 d). Se mantiene tu ejemplo como nota histórica. -->
+          <address>
+            address - representa una dirección física o de contacto
+          </address>
+
+          <img src="img/semantic HTML.png" alt="semantic HTML" height="500" />
+
           <a class="back-top" href="#inicio">☝️</a>
         </section>
 
         <!-- Bloque vs Línea -->
         <section class="block" id="bloque-vs-linea">
-          <!-- 💡 Guía:
+          <!-- 
             - Bloque (block-level): ocupa ancho completo y empieza en nueva línea. Ej: div, p, section, article, header, footer.
             - En línea (inline-level): ocupa el espacio de su contenido. Ej: span, a, strong, em, img, mark.
             - No confundas “de línea” con “texto” únicamente (img, canvas, etc., también son inline por defecto).
@@ -522,33 +347,36 @@
             <stong>div</stong>. Una etiqueta de Bloque es aquella que genera
             saltos de línea con sus etiquetas hermanas.
           </div>
-          <!--Ejemplo de etiquetas de Bloque: <heder> <main> <footer> <article> <aside>, <section>, <adress>, <div>, etc-->
+          <!--Ejemplo de etiquetas de Bloque: <header> <main> <footer> <article> <aside>, <section>, <adress>, <div>, etc-->
           <span style="background-color: greenyellow"
             >La Etiqueta de Línea por excelencia es
-            <stong>span</stong> (contenedor genérico en línea sin carga
+            <strong>span</strong> (contenedor genérico en línea sin carga
             semántica), una etiqueta de línea solo ocupa el espacio necesario
             que tiene su contenido. No generan salto de linea ni arriba ni
             abajo</span
           >
           <span style="background-color: red">Esta es otra etiqueta span</span>
           <!--Ejemplo de etiquetas de Línea: <p> <h1-6> <strong> <em> <span> <sub> <bold> <blockquote> <mark> <underlined>, <img>, <area>, <canvas>, <iframe>, <audio>, <video>, etc -->
-          <!-- 📝 Sugerencias:
-            - <strong> (no <stong>), <address> (no <adress>), <header> (no <heder>), <u> (no <underlined>), <b> (no <bold>).
-            - Tu ejemplo se conserva tal cual y se anota la corrección aquí.
-          -->
-          <a class="back-top" href="#inicio">☝️</a>
+          <br />
+          <img
+            src="img/inline-vs-block.png"
+            alt="inline-vs-block."
+            height="500"
+          />
+          <br />
+          <a class="back-top" href="#inicio">☝️volver al inicio</a>
         </section>
 
         <!-- Estilos -->
         <section class="block" id="estilos-CSS-HTML">
           <!--
-            -La primer forma es a través del atributo style de la etiqueta.
-            -La segunda forma (MAS IMPORTANTE) es a través de un archivo externo (CSS) en un archivo.css y se incluye en el documento HTML con la etiqueta link.
+            -La primer forma de dar estilo es a través del atributo style de la etiqueta.
+            -La segunda forma (MAS IMPORTANTE) es a través de un archivo externo (CSS) en un archivo ".css" y se incluye en el documento HTML con la etiqueta link.
             -La tercera es aplicar una etiqueta <style> </style> dentro del head con código CSS.
 
-            A la hora de aplicar estilos a las etiquetas es importante aplicarlo sobre las clases y no sobre los ids 
+            A la hora de APLICAR ESTILOS a las etiquetas es importante aplicarlo SOBRE LAS CLASES Y NO SOBRE LOS ID, ya que las clases pueden ser reutilizadas en varias etiquetas y los ID son únicos para cada etiqueta.
           -->
-          <!-- 💡 Guía:
+          <!-- Guía:
             - Prioriza CSS externo por organización y caché.
             - Evita estilos inline salvo demos o excepciones.
             - Usa clases para reusar estilos; reserva id para anclas/scripts.
@@ -568,7 +396,7 @@
             - Se pueden incluir scripts en el body o en el head. De preferencia ante que termine el body (al final del body).
             - Los scripts pueden ser externos (archivos.js) o incorporados dentro del código HTML.
           -->
-          <!-- 💡 Guía:
+          <!-- 
             - En HTML estándar, el lenguaje de script en navegador es JavaScript.
             - Usa defer/async en <script src> cuando corresponda para rendimiento.
             - Colocar scripts al final mitigaba bloqueo, pero hoy defer es preferible.
@@ -586,7 +414,7 @@
 
         <!-- Imágenes -->
         <section class="block" id="imagenes">
-          <!-- 💡 Guía:
+          <!-- Guía:
             - Usa siempre atributo alt descriptivo (accesibilidad/SEO).
             - Controla tamaño con CSS (no con width/height HTML) cuando puedas.
             - Formatos: jpg/png/gif/svg/webp/avif. SVG es vectorial (texto XML).
@@ -600,8 +428,9 @@
             height="400"
           />
           <!--Lo ideal es no utilizar estos atributos para definir altura y ancho de imagen, sino que debemos hacerlo desde nuestro documento CSS-->
-          <img src="img/svgLogo.svg" alt="LogoSVG" />
+          <img src="img/svgLogo.svg" alt="LogoSVG" width="600" height="400" />
           <!--Los vectores son un código xtml-->
+          <br />
           <a class="back-top" href="#inicio">☝️</a>
         </section>
 
